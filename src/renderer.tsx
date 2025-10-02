@@ -105,8 +105,8 @@ export const renderer = jsxRenderer(({ children }) => {
             
             <div class="cta-buttons space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
               <a href="/members" class="primary-cta">Access via Member Portal</a>
-              <a href="/request-invite" class="secondary-cta">Request an Invitation</a>
-              <a href="/info-session" class="tertiary-cta">Parent Info Session (20 min Zoom)</a>
+              <a href="https://calendly.com/luke-dandrea-interviews/meeting-with-luke-dandrea" target="_blank" class="secondary-cta">Request an Invitation</a>
+              <a href="https://calendly.com/luke-dandrea-interviews/meeting-with-luke-dandrea" target="_blank" class="tertiary-cta">Parent Info Session (20 min Zoom)</a>
             </div>
           </div>
         </section>
@@ -151,7 +151,7 @@ export const renderer = jsxRenderer(({ children }) => {
             </div>
             
             <div class="text-center mt-12">
-              <a href="/members" class="primary-button">Access via Member Portal</a>
+              <a href="https://calendly.com/luke-dandrea-interviews/meeting-with-luke-dandrea" target="_blank" class="primary-button">Book Discovery Call</a>
             </div>
           </div>
         </section>
@@ -187,7 +187,7 @@ export const renderer = jsxRenderer(({ children }) => {
             </div>
             
             <div class="text-center mt-12">
-              <a href="/request-invite" class="secondary-button">Request an Invitation</a>
+              <a href="https://calendly.com/luke-dandrea-interviews/meeting-with-luke-dandrea" target="_blank" class="secondary-button">Request an Invitation</a>
             </div>
           </div>
         </section>
@@ -296,7 +296,7 @@ export const renderer = jsxRenderer(({ children }) => {
             </div>
             
             <div class="text-center mt-12">
-              <a href="/members" class="primary-button">See Full Syllabus (Members)</a>
+              <a href="https://calendly.com/luke-dandrea-interviews/meeting-with-luke-dandrea" target="_blank" class="primary-button">See Full Syllabus - Book Call</a>
             </div>
           </div>
         </section>
@@ -330,93 +330,97 @@ export const renderer = jsxRenderer(({ children }) => {
             </div>
             
             <div class="mt-12">
-              <a href="/info-session" class="secondary-button">Parent Info Session (20 min)</a>
+              <a href="https://calendly.com/luke-dandrea-interviews/meeting-with-luke-dandrea" target="_blank" class="secondary-button">Parent Info Session (20 min)</a>
             </div>
           </div>
         </section>
 
         {/* Mentor & Track Record */}
         <section class="py-20 px-6">
-          <div class="max-w-6xl mx-auto text-center">
-            <h2 class="section-title text-4xl md:text-6xl font-bold mb-16">Led by Luke D'Andrea</h2>
+          <div class="max-w-6xl mx-auto">
             
-            <div class="mentor-profile neumorphic-card p-8 mb-12">
-              <div class="mentor-avatar w-32 h-32 rounded-full mx-auto mb-8 overflow-hidden border-4 border-neon-blue">
+            {/* Profile Header */}
+            <div class="text-center mb-16">
+              <div class="mentor-avatar w-40 h-40 rounded-full mx-auto mb-8 overflow-hidden border-4 border-neon-blue">
                 <img src="https://page.gensparksite.com/v1/base64_upload/6cf13c9398cbc950fc51b12b5a653f24" 
                      alt="Luke D'Andrea" 
                      class="w-full h-full object-cover" />
               </div>
-              <h3 class="text-2xl font-bold mb-4">2× Forbes-Featured Founder</h3>
-              <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
-                Serial entrepreneur with multiple successful exits. Founded ReNAD Biologics, Riddler Data Intelligence, DRIHP, and Clone Connect. 
-                Featured in Forbes for innovation in business and technology.
+              <h2 class="section-title text-4xl md:text-6xl font-bold mb-6">Luke D'Andrea</h2>
+              <h3 class="text-2xl md:text-3xl font-bold mb-4 text-neon-blue">2× Forbes-Featured Founder & Creator Academy CEO</h3>
+              <p class="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
+                Serial entrepreneur with multiple successful exits and hospital acquisitions. Founded ReNAD Biologics, Riddler Data Intelligence, DRIHP, and Clone Connect. 
+                Featured in Forbes for innovation in business and technology. Now dedicated to teaching the next generation of creators.
               </p>
             </div>
 
             {/* Media & Accolades Section */}
             <div class="accolades-section mb-12">
-              <h3 class="text-3xl font-bold mb-8 text-neon-blue">Media & Accolades</h3>
+              <h3 class="text-3xl md:text-4xl font-bold mb-8 text-center">Media & Recognition</h3>
               
               <div class="media-grid grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
-                {/* YouTube Video */}
+                {/* Forbes E-Commerce Feature */}
+                <a href="https://www.forbes.com/sites/javierhasse/2020/06/22/bella-thorne-hemp-clothing/" 
+                   target="_blank" 
+                   class="media-item neumorphic-card p-4 hover:scale-105 transition-transform duration-300 group">
+                  <div class="relative overflow-hidden rounded-lg bg-transparent">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/9c42782c227103a363cb76d58ae8da79" 
+                         alt="Forbes - E-Commerce Clothing Company" 
+                         class="w-full h-36 object-contain" />
+                    <div class="absolute top-2 right-2 bg-black/80 px-2 py-1 rounded text-xs text-white">
+                      <i class="fab fa-forbes mr-1"></i>Forbes
+                    </div>
+                  </div>
+                  <h4 class="text-sm font-semibold mt-3 text-neon-blue">E-Commerce Clothing Company</h4>
+                  <p class="text-xs text-gray-400">Forbes Business Feature</p>
+                </a>
+
+                {/* Forbes Prophets of Hemp */}
+                <a href="https://www.forbes.com/sites/barrettwissman/2019/11/25/prophets-of-hemp/" 
+                   target="_blank" 
+                   class="media-item neumorphic-card p-4 hover:scale-105 transition-transform duration-300 group">
+                  <div class="relative overflow-hidden rounded-lg bg-transparent">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/dc4e95dbde968660382a8232c6c5b6e4" 
+                         alt="Forbes - Prophets of Hemp Lead Marketer" 
+                         class="w-full h-36 object-contain" />
+                    <div class="absolute top-2 right-2 bg-black/80 px-2 py-1 rounded text-xs text-white">
+                      <i class="fab fa-forbes mr-1"></i>Forbes
+                    </div>
+                  </div>
+                  <h4 class="text-sm font-semibold mt-3 text-neon-blue">Prophets of Hemp: Lead Marketer</h4>
+                  <p class="text-xs text-gray-400">Forbes Industry Recognition</p>
+                </a>
+
+                {/* AI Tool - Hospital Acquisition */}
                 <a href="https://www.youtube.com/watch?v=rCNJniA9YiM" 
                    target="_blank" 
                    class="media-item neumorphic-card p-4 hover:scale-105 transition-transform duration-300 group">
-                  <div class="relative overflow-hidden rounded-lg">
-                    <img src="https://page.gensparksite.com/v1/base64_upload/2dc02ab137f7a01e0676895c1041f71e" 
-                         alt="ReNAD Biologics - YouTube Interview" 
-                         class="w-full h-32 object-cover" />
+                  <div class="relative overflow-hidden rounded-lg bg-transparent">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/ca428cd8fc5239c132209ba69fb99810" 
+                         alt="AI Tool Built and Sold to Hospitals" 
+                         class="w-full h-36 object-contain" />
                     <div class="absolute inset-0 bg-black/50 flex items-center justify-center group-hover:bg-black/30 transition-colors">
                       <div class="play-button w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
                         <i class="fas fa-play text-white ml-1"></i>
                       </div>
                     </div>
-                  </div>
-                  <h4 class="text-sm font-semibold mt-3 text-neon-blue">ReNAD Biologics Interview</h4>
-                  <p class="text-xs text-gray-400">YouTube Feature</p>
-                </a>
-
-                {/* Forbes Article 1 - Bella Thorne */}
-                <a href="https://www.forbes.com/sites/javierhasse/2020/06/22/bella-thorne-hemp-clothing/" 
-                   target="_blank" 
-                   class="media-item neumorphic-card p-4 hover:scale-105 transition-transform duration-300 group">
-                  <div class="relative overflow-hidden rounded-lg bg-transparent">
-                    <img src="https://page.gensparksite.com/v1/base64_upload/11c90ce77e75967c3f2d7290981c4db6" 
-                         alt="Forbes - Bella Thorne Hemp Clothing" 
-                         class="w-full h-32 object-contain" />
                     <div class="absolute top-2 right-2 bg-black/80 px-2 py-1 rounded text-xs text-white">
-                      <i class="fab fa-forbes mr-1"></i>Forbes
+                      <i class="fab fa-youtube mr-1"></i>Video
                     </div>
                   </div>
-                  <h4 class="text-sm font-semibold mt-3 text-neon-blue">Hemp Clothing Feature</h4>
-                  <p class="text-xs text-gray-400">Forbes Magazine</p>
+                  <h4 class="text-sm font-semibold mt-3 text-neon-blue">AI Tool - Hospital Acquisition</h4>
+                  <p class="text-xs text-gray-400">ReNAD Biologics Success Story</p>
                 </a>
 
-                {/* Forbes Article 2 - Prophets of Hemp */}
-                <a href="https://www.forbes.com/sites/barrettwissman/2019/11/25/prophets-of-hemp/" 
-                   target="_blank" 
-                   class="media-item neumorphic-card p-4 hover:scale-105 transition-transform duration-300 group">
-                  <div class="relative overflow-hidden rounded-lg bg-transparent">
-                    <img src="https://page.gensparksite.com/v1/base64_upload/08e746ca57f5bf6fe8300aea12334895" 
-                         alt="Forbes - Prophets of Hemp" 
-                         class="w-full h-32 object-contain" />
-                    <div class="absolute top-2 right-2 bg-black/80 px-2 py-1 rounded text-xs text-white">
-                      <i class="fab fa-forbes mr-1"></i>Forbes
-                    </div>
-                  </div>
-                  <h4 class="text-sm font-semibold mt-3 text-neon-blue">Prophets of Hemp</h4>
-                  <p class="text-xs text-gray-400">Forbes Feature Story</p>
-                </a>
-
-                {/* Instagram Video */}
+                {/* CEO Recognition */}
                 <a href="https://www.instagram.com/tv/B-N7h7jlkqv/?igsh=NTc4MTIwNjQ2YQ==" 
                    target="_blank" 
                    class="media-item neumorphic-card p-4 hover:scale-105 transition-transform duration-300 group">
                   <div class="relative overflow-hidden rounded-lg bg-transparent">
-                    <img src="https://page.gensparksite.com/v1/base64_upload/8b7364bb21289f4be6048ead1dba1ef8" 
-                         alt="HempToday Feature - Instagram" 
-                         class="w-full h-32 object-contain" />
+                    <img src="https://page.gensparksite.com/v1/base64_upload/c891cb8be9612baaa28ba2f4e36129f8" 
+                         alt="CEO of Year Speech - 90 CEOs 16 Countries" 
+                         class="w-full h-36 object-contain" />
                     <div class="absolute inset-0 bg-black/50 flex items-center justify-center group-hover:bg-black/30 transition-colors">
                       <div class="play-button w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
                         <i class="fab fa-instagram text-white"></i>
@@ -426,38 +430,40 @@ export const renderer = jsxRenderer(({ children }) => {
                       <i class="fab fa-instagram mr-1"></i>IGTV
                     </div>
                   </div>
-                  <h4 class="text-sm font-semibold mt-3 text-neon-blue">Industry Interview</h4>
-                  <p class="text-xs text-gray-400">Instagram Feature</p>
+                  <h4 class="text-sm font-semibold mt-3 text-neon-blue">CEO Recognition Speech</h4>
+                  <p class="text-xs text-gray-400">90 CEOs, 16 Countries</p>
                 </a>
 
               </div>
             </div>
             
             {/* Companies Grid */}
-            <div class="companies-section">
+            <div class="companies-section text-center">
               <h3 class="text-3xl font-bold mb-8">Founded Companies</h3>
               <div class="companies-grid grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="company-card neumorphic-card p-6">
                   <h4 class="font-semibold text-neon-blue">ReNAD Biologics</h4>
-                  <p class="text-sm text-gray-400 mt-2">Biotechnology</p>
+                  <p class="text-sm text-gray-400 mt-2">AI/Healthcare • Hospital Acquisition</p>
                 </div>
                 <div class="company-card neumorphic-card p-6">
                   <h4 class="font-semibold text-neon-blue">Riddler Data Intelligence</h4>
-                  <p class="text-sm text-gray-400 mt-2">AI/ML Platform</p>
+                  <p class="text-sm text-gray-400 mt-2">AI/ML Platform • Successful Exit</p>
                 </div>
                 <div class="company-card neumorphic-card p-6">
                   <h4 class="font-semibold text-neon-blue">DRIHP</h4>
-                  <p class="text-sm text-gray-400 mt-2">Healthcare Tech</p>
+                  <p class="text-sm text-gray-400 mt-2">Healthcare Tech • Market Leader</p>
                 </div>
                 <div class="company-card neumorphic-card p-6">
                   <h4 class="font-semibold text-neon-blue">Clone Connect</h4>
-                  <p class="text-sm text-gray-400 mt-2">Social Platform</p>
+                  <p class="text-sm text-gray-400 mt-2">Social Platform • Growth Stage</p>
                 </div>
               </div>
             </div>
             
-            <div class="mt-12">
-              <a href="/info-session" class="primary-button">Meet Luke (20-min Zoom)</a>
+            <div class="text-center mt-12">
+              <a href="https://calendly.com/luke-dandrea-interviews/meeting-with-luke-dandrea" 
+                 target="_blank" 
+                 class="primary-button">Schedule Meeting with Luke</a>
             </div>
           </div>
         </section>
@@ -522,7 +528,7 @@ export const renderer = jsxRenderer(({ children }) => {
             </div>
             
             <div class="text-center mt-12">
-              <a href="/request-invite" class="secondary-button">Request an Invitation</a>
+              <a href="https://calendly.com/luke-dandrea-interviews/meeting-with-luke-dandrea" target="_blank" class="secondary-button">Request an Invitation</a>
             </div>
           </div>
         </section>
@@ -542,7 +548,7 @@ export const renderer = jsxRenderer(({ children }) => {
               
               <div class="cta-buttons space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
                 <a href="/members" class="primary-button">Access via Member Portal</a>
-                <a href="/request-invite" class="secondary-button">Request an Invitation</a>
+                <a href="https://calendly.com/luke-dandrea-interviews/meeting-with-luke-dandrea" target="_blank" class="secondary-button">Request an Invitation</a>
               </div>
             </div>
           </div>
@@ -581,7 +587,7 @@ export const renderer = jsxRenderer(({ children }) => {
             </div>
             
             <div class="mt-12">
-              <a href="/members" class="primary-button">See Milestones (Members)</a>
+              <a href="https://calendly.com/luke-dandrea-interviews/meeting-with-luke-dandrea" target="_blank" class="primary-button">See Full Program Details</a>
             </div>
           </div>
         </section>
@@ -644,7 +650,7 @@ export const renderer = jsxRenderer(({ children }) => {
             </div>
             
             <div class="text-center mt-12">
-              <a href="/info-session" class="secondary-button">Parent Info Session (20 min)</a>
+              <a href="https://calendly.com/luke-dandrea-interviews/meeting-with-luke-dandrea" target="_blank" class="secondary-button">Parent Info Session (20 min)</a>
             </div>
           </div>
         </section>
@@ -657,7 +663,7 @@ export const renderer = jsxRenderer(({ children }) => {
             </div>
             <div class="flex space-x-4">
               <a href="/members" class="primary-button-small">Access Now</a>
-              <a href="/request-invite" class="text-blue-400 hover:text-blue-300 text-sm">Request an Invitation</a>
+              <a href="https://calendly.com/luke-dandrea-interviews/meeting-with-luke-dandrea" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">Request an Invitation</a>
             </div>
           </div>
         </div>
