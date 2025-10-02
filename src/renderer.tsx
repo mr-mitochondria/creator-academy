@@ -337,34 +337,122 @@ export const renderer = jsxRenderer(({ children }) => {
 
         {/* Mentor & Track Record */}
         <section class="py-20 px-6">
-          <div class="max-w-4xl mx-auto text-center">
+          <div class="max-w-6xl mx-auto text-center">
             <h2 class="section-title text-4xl md:text-6xl font-bold mb-16">Led by Luke D'Andrea</h2>
             
             <div class="mentor-profile neumorphic-card p-8 mb-12">
-              <div class="mentor-avatar w-32 h-32 bg-gray-700 rounded-full mx-auto mb-8"></div>
+              <div class="mentor-avatar w-32 h-32 rounded-full mx-auto mb-8 overflow-hidden border-4 border-neon-blue">
+                <img src="https://page.gensparksite.com/v1/base64_upload/6cf13c9398cbc950fc51b12b5a653f24" 
+                     alt="Luke D'Andrea" 
+                     class="w-full h-full object-cover" />
+              </div>
               <h3 class="text-2xl font-bold mb-4">2× Forbes-Featured Founder</h3>
               <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
                 Serial entrepreneur with multiple successful exits. Founded ReNAD Biologics, Riddler Data Intelligence, DRIHP, and Clone Connect. 
                 Featured in Forbes for innovation in business and technology.
               </p>
             </div>
+
+            {/* Media & Accolades Section */}
+            <div class="accolades-section mb-12">
+              <h3 class="text-3xl font-bold mb-8 text-neon-blue">Media & Accolades</h3>
+              
+              <div class="media-grid grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                {/* YouTube Video */}
+                <a href="https://www.youtube.com/watch?v=rCNJniA9YiM" 
+                   target="_blank" 
+                   class="media-item neumorphic-card p-4 hover:scale-105 transition-transform duration-300 group">
+                  <div class="relative overflow-hidden rounded-lg">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/2dc02ab137f7a01e0676895c1041f71e" 
+                         alt="ReNAD Biologics - YouTube Interview" 
+                         class="w-full h-32 object-cover" />
+                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center group-hover:bg-black/30 transition-colors">
+                      <div class="play-button w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-play text-white ml-1"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="text-sm font-semibold mt-3 text-neon-blue">ReNAD Biologics Interview</h4>
+                  <p class="text-xs text-gray-400">YouTube Feature</p>
+                </a>
+
+                {/* Forbes Article 1 - Bella Thorne */}
+                <a href="https://www.forbes.com/sites/javierhasse/2020/06/22/bella-thorne-hemp-clothing/" 
+                   target="_blank" 
+                   class="media-item neumorphic-card p-4 hover:scale-105 transition-transform duration-300 group">
+                  <div class="relative overflow-hidden rounded-lg bg-transparent">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/11c90ce77e75967c3f2d7290981c4db6" 
+                         alt="Forbes - Bella Thorne Hemp Clothing" 
+                         class="w-full h-32 object-contain" />
+                    <div class="absolute top-2 right-2 bg-black/80 px-2 py-1 rounded text-xs text-white">
+                      <i class="fab fa-forbes mr-1"></i>Forbes
+                    </div>
+                  </div>
+                  <h4 class="text-sm font-semibold mt-3 text-neon-blue">Hemp Clothing Feature</h4>
+                  <p class="text-xs text-gray-400">Forbes Magazine</p>
+                </a>
+
+                {/* Forbes Article 2 - Prophets of Hemp */}
+                <a href="https://www.forbes.com/sites/barrettwissman/2019/11/25/prophets-of-hemp/" 
+                   target="_blank" 
+                   class="media-item neumorphic-card p-4 hover:scale-105 transition-transform duration-300 group">
+                  <div class="relative overflow-hidden rounded-lg bg-transparent">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/08e746ca57f5bf6fe8300aea12334895" 
+                         alt="Forbes - Prophets of Hemp" 
+                         class="w-full h-32 object-contain" />
+                    <div class="absolute top-2 right-2 bg-black/80 px-2 py-1 rounded text-xs text-white">
+                      <i class="fab fa-forbes mr-1"></i>Forbes
+                    </div>
+                  </div>
+                  <h4 class="text-sm font-semibold mt-3 text-neon-blue">Prophets of Hemp</h4>
+                  <p class="text-xs text-gray-400">Forbes Feature Story</p>
+                </a>
+
+                {/* Instagram Video */}
+                <a href="https://www.instagram.com/tv/B-N7h7jlkqv/?igsh=NTc4MTIwNjQ2YQ==" 
+                   target="_blank" 
+                   class="media-item neumorphic-card p-4 hover:scale-105 transition-transform duration-300 group">
+                  <div class="relative overflow-hidden rounded-lg bg-transparent">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/8b7364bb21289f4be6048ead1dba1ef8" 
+                         alt="HempToday Feature - Instagram" 
+                         class="w-full h-32 object-contain" />
+                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center group-hover:bg-black/30 transition-colors">
+                      <div class="play-button w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                        <i class="fab fa-instagram text-white"></i>
+                      </div>
+                    </div>
+                    <div class="absolute top-2 right-2 bg-black/80 px-2 py-1 rounded text-xs text-white">
+                      <i class="fab fa-instagram mr-1"></i>IGTV
+                    </div>
+                  </div>
+                  <h4 class="text-sm font-semibold mt-3 text-neon-blue">Industry Interview</h4>
+                  <p class="text-xs text-gray-400">Instagram Feature</p>
+                </a>
+
+              </div>
+            </div>
             
-            <div class="companies-grid grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div class="company-card neumorphic-card p-6">
-                <h4 class="font-semibold text-neon-blue">ReNAD Biologics</h4>
-                <p class="text-sm text-gray-400 mt-2">Biotechnology</p>
-              </div>
-              <div class="company-card neumorphic-card p-6">
-                <h4 class="font-semibold text-neon-blue">Riddler Data Intelligence</h4>
-                <p class="text-sm text-gray-400 mt-2">AI/ML Platform</p>
-              </div>
-              <div class="company-card neumorphic-card p-6">
-                <h4 class="font-semibold text-neon-blue">DRIHP</h4>
-                <p class="text-sm text-gray-400 mt-2">Healthcare Tech</p>
-              </div>
-              <div class="company-card neumorphic-card p-6">
-                <h4 class="font-semibold text-neon-blue">Clone Connect</h4>
-                <p class="text-sm text-gray-400 mt-2">Social Platform</p>
+            {/* Companies Grid */}
+            <div class="companies-section">
+              <h3 class="text-3xl font-bold mb-8">Founded Companies</h3>
+              <div class="companies-grid grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="company-card neumorphic-card p-6">
+                  <h4 class="font-semibold text-neon-blue">ReNAD Biologics</h4>
+                  <p class="text-sm text-gray-400 mt-2">Biotechnology</p>
+                </div>
+                <div class="company-card neumorphic-card p-6">
+                  <h4 class="font-semibold text-neon-blue">Riddler Data Intelligence</h4>
+                  <p class="text-sm text-gray-400 mt-2">AI/ML Platform</p>
+                </div>
+                <div class="company-card neumorphic-card p-6">
+                  <h4 class="font-semibold text-neon-blue">DRIHP</h4>
+                  <p class="text-sm text-gray-400 mt-2">Healthcare Tech</p>
+                </div>
+                <div class="company-card neumorphic-card p-6">
+                  <h4 class="font-semibold text-neon-blue">Clone Connect</h4>
+                  <p class="text-sm text-gray-400 mt-2">Social Platform</p>
+                </div>
               </div>
             </div>
             
